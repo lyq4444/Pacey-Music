@@ -1,0 +1,49 @@
+# Dependencies and generated build output
+node_modules/
+dist/
+coverage/
+
+# Local environment and credentials
+.env*
+*.pem
+*.key
+credentials.json
+
+# Local music library, lyrics, and generated reports
+/library/audio/**
+!/library/audio/README.md
+/library/*report.json
+*.mp3
+*.m4a
+*.m4s
+*.flac
+*.aac
+*.wav
+*.ogg
+*.lrc
+*.source.lrc
+*.verified.lrc
+*.lyrics.txt
+
+# Local download source list and downloader
+/download_list.json
+/download_jay_music.py
+
+# Optional local lyric alignment tools (keep out of the project commit)
+/scripts/align-local-lyrics.mjs
+/scripts/lyrics-alignment/
+/server/lyrics-migration.js
+/server/lyrics-migration.test.mjs
+/server/lrc-tools.js
+/server/lrc-tools.test.mjs
+
+# Legacy static files not used by the current application
+/public/legacy/
+
+# Local previews, agent state, logs, and Python cache
+/.brainstorm-preview/
+/.superpowers/
+/docs/superpowers/
+*.log
+__pycache__/
+*.py[cod]

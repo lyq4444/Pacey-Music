@@ -1,0 +1,28 @@
+{
+  "name": "pacey-music",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/dev.js",
+    "dev:web": "vite --host 127.0.0.1",
+    "dev:api": "node server/index.js",
+    "import:lyrics": "node scripts/import-local-lyrics.mjs",
+    "test": "node --test src/**/*.test.mjs server/**/*.test.mjs",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.17.0",
+    "axios": "^1.7.9",
+    "pinia": "^2.3.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vue-tsc": "^2.2.0"
+  }
+}
