@@ -1,4 +1,4 @@
-# Pacey Music
+# Pacey-Music
 
 A local-first music library and player built with Vue 3, TypeScript, Vite, Pinia, and a small Node.js API.
 
